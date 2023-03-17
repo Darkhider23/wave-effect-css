@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins',sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root{
   display: flex;
-  flex-direction: column;
+  justify-content:flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #1f2028;
 }
-
-.App-link {
-  color: #61dafb;
+section{
+  position: relative;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+section .waves{
+  position: relative;
+}
+section .waves .wave{
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width:100%;
+  height: 100px;
+  background-image: url('./assets/wave.png');
+  background-size: 1000px 100px;
+}
+section .waves .wave#wave1{
+  opacity: 1;
+  bottom:0;
+  z-index:1000;
+  animation: animate 4s linear infinite;
+}
+section .waves .wave#wave2{
+  opacity: 0.5;
+  bottom:10px;
+  z-index:999;
+  animation: animate2 4s linear infinite;
+}
+section .waves .wave#wave3{
+  opacity: 0.2;
+  bottom:15px;
+  z-index:998;
+  animation: animate 2s linear infinite;
+}
+section .waves .wave#wave4{
+  opacity: 0.7;
+  bottom:20px;
+  z-index:999;
+  animation: animate2 2s linear infinite;
+}
+@keyframes animate{
+  
+  0%
+  {
+    background-position-x: 1000px;
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    background-position-x:0px;
   }
+}
+@keyframes animate2{
+  
+  0%
+  {
+    background-position-x: 0px;
+  }
+  100%{
+    background-position-x:1000px;
+  }
+}
+.stars{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events:none;
+  mix-blend-mode: screen;
+}
+h2{
+  position: absolute;
+  bottom: 65vh;
+  transform: translateY(50%);
+  width: 60rem;
+  height: 15rem;
+  margin-left:30%;
+  color:#fff;
+  font-size:5em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.island{
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width: 800px;
+  bottom: 0;
+  pointer-events: none;
 }
