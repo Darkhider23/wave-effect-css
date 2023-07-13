@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/wave-effect-css/static/css/main.43de0e9c.css",
+    "main.js": "/wave-effect-css/static/js/main.b9a80f0d.js",
+    "static/js/787.d0b29ef8.chunk.js": "/wave-effect-css/static/js/787.d0b29ef8.chunk.js",
+    "static/media/island.png": "/wave-effect-css/static/media/island.f3a66384931306cd4cae.png",
+    "static/media/stars.jpg": "/wave-effect-css/static/media/stars.68a081fec8a20fb242ea.jpg",
+    "index.html": "/wave-effect-css/index.html",
+    "main.43de0e9c.css.map": "/wave-effect-css/static/css/main.43de0e9c.css.map",
+    "main.b9a80f0d.js.map": "/wave-effect-css/static/js/main.b9a80f0d.js.map",
+    "787.d0b29ef8.chunk.js.map": "/wave-effect-css/static/js/787.d0b29ef8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43de0e9c.css",
+    "static/js/main.b9a80f0d.js"
+  ]
+}
